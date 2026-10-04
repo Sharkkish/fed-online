@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+.main_tructure {
+    background-color: rgb(227, 203, 196);
+    width: 360px;
+    height: 800px;
+    border: 2px solid black;
+    padding: 50px;
+    border-radius: 35px;
+    margin: 50px auto;
+    font-size: 30px;
+}
+.Logo{
+    display: block;  
+    margin-top: -35px;
+}
+
+.search_area input {
+    width: 250px;
+    padding: 10px;
+}
+
+.search_area input::placeholder {
+    opacity: 0.5;
+}
+img {
+    margin-top: 20px;
+}
+.Burgers{   
+    margin-top: 25px;
+    margin-left: -25px;
+}
+.Burgers_images img {
+    margin-left: -25px;
+    width: 300px;
+    display: block;
+}
