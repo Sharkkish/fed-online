@@ -1,7 +1,8 @@
-*{
+* {
     box-sizing: border-box;
 }
-.main_tructure {
+
+.main_structure {
     background-color: rgb(227, 203, 196);
     width: 360px;
     height: 800px;
@@ -11,8 +12,9 @@
     margin: 50px auto;
     font-size: 30px;
 }
-.Logo{
-    display: block;  
+
+.Logo {
+    display: block;
     margin-top: -35px;
 }
 
@@ -24,15 +26,39 @@
 .search_area input::placeholder {
     opacity: 0.5;
 }
-img {
+
+.search_area img {
     margin-top: 20px;
 }
-.Burgers{   
+
+.Burgers {
     margin-top: 25px;
     margin-left: -25px;
 }
-.Burgers_images img {
+
+.Burger_card {
     margin-left: -25px;
-    width: 300px;
-    display: block;
+    margin-bottom: 20px;
+}
+
+.Burger_card img {
+    width: 80px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.burger_info {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+}
+
+.burger_name {
+    font-size: 20px;
+    margin: 0;
+}
+
+.burger_price {
+    font-size: 18px;
+    margin: 5px 0 0;
 }
