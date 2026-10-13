@@ -2,63 +2,118 @@
     box-sizing: border-box;
 }
 
-.main_structure {
-    background-color: rgb(227, 203, 196);
+body {
+    background-color: #f7b3b3;
+}
+
+.container {
     width: 360px;
-    height: 800px;
-    border: 2px solid black;
-    padding: 50px;
-    border-radius: 35px;
+    min-height: 800px;
     margin: 50px auto;
-    font-size: 30px;
+    padding: 35px 20px;
+    border-radius: 30px;
+    background-color: white;
 }
 
-.Logo {
-    display: block;
-    margin-top: -35px;
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
 
-.search_area input {
-    width: 250px;
-    padding: 10px;
+h1 {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 35px;
+    color: black;
 }
 
-.search_area input::placeholder {
-    opacity: 0.5;
+form input {
+    width: 100%;
+    padding: 12px;
+    border: 0px solid #cccccc;
+    border-radius: 10px;
+    font-size: 14px;
 }
 
-.search_area img {
+/* Категории Food, Sweet, Drinks */
+.categories {
     margin-top: 20px;
 }
 
-.Burgers {
-    margin-top: 25px;
-    margin-left: -25px;
-}
-
-.Burger_card {
-    margin-left: -25px;
-    margin-bottom: 20px;
-}
-
-.Burger_card img {
-    width: 80px;
+.category {
     display: inline-block;
-    vertical-align: middle;
+    width: 91px;
+    min-height: 85px;
+    margin-right: 3px;
+    padding: 10px 4px;
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+    background-color: white;
+    text-align: center;
+    vertical-align: top;
+    cursor: pointer;
 }
 
-.burger_info {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 15px;
+.category img {
+    width: 30px;
+    height: 30px;
 }
 
-.burger_name {
-    font-size: 20px;
-    margin: 0;
-}
-
-.burger_price {
-    font-size: 18px;
+.category p {
     margin: 5px 0 0;
+    font-size: 18px;
 }
+
+.category:not(.active) p {
+    opacity: 0.5;
+}
+
+.category.active,
+.category:hover {
+    background-color: #ffe36e;
+}
+
+/* Заголовок Burgers */
+h2 {
+    margin: 25px 0 15px;
+    font-size: 24px;
+}
+
+/* Карточки бургеров */
+.burger-card {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.burger-card:hover {
+    background-color: #ffe36e;
+    transform: scale(1.02);
+}
+
+.burger-card img {
+    width: 75px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.burger-info {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.burger-name {
+    margin: 0;
+    font-size: 16px;
+}
+
+.burger-price {
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+
