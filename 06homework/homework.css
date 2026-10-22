@@ -4,8 +4,13 @@
 
 body {
     background-color: #f7b3b3;
+   .google-sans 
+    font-family: "Google Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+    font-variation-settings: "GRAD" 200;
 }
-
 .container {
     width: 360px;
     min-height: 800px;
